@@ -6,8 +6,9 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> the_answer
-          42
+          >>> "Duration^2" in trips.labels
+          >>> trips.where("Trip ID", 875617)["Duration^2"][0]
+          525625
           """,
           'hidden': False,
           'locked': False
